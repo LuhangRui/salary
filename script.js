@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Tiers Data
     const tiers = [
-        { max: 2, title: '乞丐/流民', desc: '温饱都是问题，太难了...', emoji: '😭', img: 'assets/avatar_beggar.png' },
-        { max: 10, title: '衙役/差役', desc: '勉强糊口，由于工时太长，没有加班费', emoji: '😐', img: 'assets/avatar_runner.png' },
-        { max: 50, title: '县令', desc: '七品芝麻官，也是一方父母官', emoji: '🙂', img: 'assets/avatar_magistrate.png' },
-        { max: 150, title: '知府/高官', desc: '朝廷重臣，位高权重', emoji: '😎', img: 'assets/avatar_prefect.png' },
-        { max: Infinity, title: '王爷/皇亲国戚', desc: '泼天富贵，享之不尽', emoji: '🤑', img: 'assets/avatar_minister.png' }
+        { max: 2, title: '落魄布衣', desc: '苍天无眼，时运不济，恐有饿死街头之虞...', emoji: '😭', img: 'assets/avatar_beggar.png' },
+        { max: 10, title: '衙门差役', desc: '起早贪黑，勉强糊口，还得看大老爷脸色...', emoji: '😐', img: 'assets/avatar_runner.png' },
+        { max: 50, title: '七品县令', desc: '百里侯，一方父母官，掌管一县生杀大权！', emoji: '🙂', img: 'assets/avatar_magistrate.png' },
+        { max: 150, title: '当朝四品', desc: '紫袍玉带，主政一方，乃是朝廷栋梁之才！', emoji: '😎', img: 'assets/avatar_prefect.png' },
+        { max: Infinity, title: '极品王侯', desc: '位极人臣，泼天富贵，享之不尽，羡煞旁人！', emoji: '🤑', img: 'assets/avatar_minister.png' }
     ];
 
     // Calculate Function
@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
                     navigator.share({
                         files: [file],
-                        title: '古代俸禄计算器',
-                        text: '来看看你的月薪在古代是什么官职！'
+                        title: '古代俸禄折算司',
+                        text: '速看！阁下的月俸在古代竟是这就等待遇？！'
                     }).catch(err => console.log('分享取消', err));
                 } else {
                     // Fallback for Desktop or unsupported browsers

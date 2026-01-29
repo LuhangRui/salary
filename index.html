@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
+
 <body>
     <div class="container">
-        <h1>💰 古代银子俸禄计算器</h1>
-        
+        <h1>古代俸禄折算司</h1>
+
         <div class="input-section">
             <div class="input-group">
-                <label for="silverPrice">今日银价 (元/克)</label>
+                <label for="silverPrice">今日纹银市价 (元/克)</label>
                 <input type="number" id="silverPrice" value="35" placeholder="例如: 35">
             </div>
             <div class="input-group">
-                <label for="salary">月薪 (元)</label>
+                <label for="salary">现世月薪 (元)</label>
                 <input type="number" id="salary" value="3500" placeholder="例如: 3500">
             </div>
-            <button id="calculateBtn">计算我的古代身价</button>
+            <button id="calculateBtn">呈报户部核算</button>
         </div>
 
         <div id="resultCard" class="result-card" style="display: none;">
             <div class="card-header">
-                <h2>计算结果</h2>
+                <h2>户部核算批文</h2>
             </div>
-            
+
             <div class="card-content">
                 <div class="silver-info">
-                    <span>银两数量:</span>
+                    <span>折合纹银:</span>
                     <span id="silverAmount" class="highlight">0.00</span>
                     <span>两</span>
                     <span class="emoji" id="resultEmoji">😂</span>
@@ -42,9 +44,9 @@
                         <img id="rankAvatar" src="" alt="官职形象">
                     </div>
                     <div class="text-info">
-                        <p>您的月薪相当于 <strong id="silverAmountText">0.00</strong> 两 银子</p>
+                        <p>阁下月俸折合 <strong><span id="silverAmountText">0.00</span> 两</strong> 纹银</p>
                         <div class="rank-badge">
-                            相当于古代 <span id="rankTitle" class="rank-name">--</span> 的月俸水平
+                            相当于本朝 <span id="rankTitle" class="rank-name">--</span> 之待遇
                             <div id="rankDesc" class="rank-desc">--</div>
                         </div>
                     </div>
@@ -64,4 +66,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
