@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // QR Code
         qrcodeDiv.innerHTML = '';
         new QRCode(qrcodeDiv, {
-            text: window.location.href,
+            text: 'https://salary.pixalisting.com/',
             width: 100,
             height: 100,
             colorDark: "#000000",
