@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古代银子俸禄计算器</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 古代银子俸禄计算器</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="silverPrice">今日银价 (元/克)</label>
+                <input type="number" id="silverPrice" value="35" placeholder="例如: 35">
+            </div>
+            <div class="input-group">
+                <label for="salary">月薪 (元)</label>
+                <input type="number" id="salary" value="3500" placeholder="例如: 3500">
+            </div>
+            <button id="calculateBtn">计算我的古代身价</button>
+        </div>
+
+        <div id="resultCard" class="result-card" style="display: none;">
+            <div class="card-header">
+                <h2>计算结果</h2>
+            </div>
+            
+            <div class="card-content">
+                <div class="silver-info">
+                    <span>银两数量:</span>
+                    <span id="silverAmount" class="highlight">0.00</span>
+                    <span>两</span>
+                    <span class="emoji" id="resultEmoji">😂</span>
+                </div>
+
+                <div class="rank-info">
+                    <div class="avatar-container">
+                        <img id="rankAvatar" src="" alt="官职形象">
+                    </div>
+                    <div class="text-info">
+                        <p>您的月薪相当于 <strong id="silverAmountText">0.00</strong> 两 银子</p>
+                        <div class="rank-badge">
+                            相当于古代 <span id="rankTitle" class="rank-name">--</span> 的月俸水平
+                            <div id="rankDesc" class="rank-desc">--</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qr-code-section">
+                    <div id="qrcode"></div>
+                    <p>扫描二维码查看更多</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons" id="actionButtons" style="display: none;">
+            <button id="saveBtn" class="btn-primary">保存到手机</button>
+            <button id="shareBtn" class="btn-secondary">分享到社交平台</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
