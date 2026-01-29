@@ -33,9 +33,11 @@
 
             <div class="card-content">
                 <div class="silver-info">
-                    <span>折合纹银:</span>
-                    <span id="silverAmount" class="highlight">0.00</span>
-                    <span>两</span>
+                    <span class="label">折合纹银</span>
+                    <div class="silver-value-row">
+                        <span id="silverAmount" class="highlight">0.00</span>
+                        <span class="unit">两</span>
+                    </div>
                     <span class="emoji" id="resultEmoji">😂</span>
                 </div>
 
@@ -52,10 +54,10 @@
                     </div>
                 </div>
 
-                <div class="qr-code-section">
-                    <div id="qrcode"></div>
-                    <p>扫描二维码查看更多</p>
-                </div>
+            </div> <!-- Close card-content -->
+
+            <div class="qr-code-section">
+                <div id="qrcode"></div>
             </div>
         </div>
 
