@@ -17,7 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Tiers Data
     const tiers = [
-        { max: 2, title: '落魄布衣', desc: '苍天无眼，时运不济，恐有饿死街头之虞...', emoji: '😭', img: 'assets/avatar_beggar.png' },
+        { max: 1.5, title: '长工', desc: '面朝黄土背朝天，汗滴禾下土。', emoji: '🌾', img: 'assets/avatar_farmhand.png' },
+        { max: 2.5, title: '店小二', desc: '跑堂擦桌忙不停，客官里边请！', emoji: '🍵', img: 'assets/avatar_waiter.png' },
+        { max: 4.0, title: '私塾先生', desc: '之乎者也教书忙，两袖清风亦自强。', emoji: '📖', img: 'assets/avatar_tutor.png' },
+        { max: 6.5, title: '捕快', desc: '腰挂腰刀巡街巷，宵小之辈哪里藏！', emoji: '👮', img: 'assets/avatar_constable.png' },
         { max: 10, title: '衙门差役', desc: '起早贪黑，勉强糊口，还得看大老爷脸色...', emoji: '😐', img: 'assets/avatar_runner.png' },
         { max: 50, title: '七品县令', desc: '百里侯，一方父母官，掌管一县生杀大权！', emoji: '🙂', img: 'assets/avatar_magistrate.png' },
         { max: 150, title: '当朝四品', desc: '紫袍玉带，主政一方，乃是朝廷栋梁之才！', emoji: '😎', img: 'assets/avatar_prefect.png' },
